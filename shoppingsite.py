@@ -120,7 +120,7 @@ def process_login():
     dictionary, look up the user, and store them in the session.
     """
 
-  email = request.form.get('email')
+    email = request.form.get('email')
     password = request.form.get('password')
 
     user = customers.get_by_email(email)
